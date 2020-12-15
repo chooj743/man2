@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  font-family: helvetica;
+  font-size: 100%;
+  margin: 0;
+  padding: 0.2%;
+  overflow-x: hidden;
+  background: #d1d3d4;
+/*  cursor: url('../contents/cursorv-02.png'), auto;*/
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 4px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black; 
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: underline;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: ne-resize;
+  color: darkgrey;
+}
+
+.gridwrapper {
+/*  overflow: auto;*/
+  position: relative;
+  height: auto;
+}
+
+.gridcontent {
+  display: flex;
+/*  width: 8.33%;*/
+  margin: 0;
+/*  border-right: 1px solid grey;*/
+  height: auto;
+  float: left;
+/*  background-color: #84c754;*/
+/*  background-color: #f1f1f1;*/
+}
+
+
+/*Top Menu*/
+	#menu{
+		position: fixed;
+		display: flex;
+		width:100%;
+		background:none;
+	/*	border-right-color:none;*/
+		font-weight: 100;
+		font-size: 1.8rem;
+		z-index: 99;
+	}
+
+	.menubtn{
+		width: 25%;
+		height: 100%;
+		align-items: center;
+		text-transform: uppercase;
+	}
+
+h1{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 2rem;
+}
+
+h2{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 1.2rem;
+}
+
+
+p{
+	width: 85%;
+	font-weight: 100;
+	font-size: 1.2rem;
+	line-height: 1.9rem;
+	overflow: hidden;
+}
+
+p1{
+	width: 85%;
+	font-weight: 100;
+	font-size: 0.9rem;
+	line-height: 1.2rem;
+	overflow: hidden;
+}
+
+.bottom{
+	position:absolute;                  
+    bottom:0;
+    height: auto;  
+    padding-bottom: 2.5%;
+}
+
+cap{
+	margin-left: 3%;
+    width: 75%;
+	font-weight: 100;
+	font-size: 0.8rem;
+	line-height: 1.3rem;
+}
+
+sup{
+	font-size: 0.7rem;
+}
+
+.tab{
+	padding-left: 0.8rem;
+}
+
+.board{
+	width: 99vw;
+	height: 98vh;
+	overflow-y: hidden;
+}
+
+
+#landing{
+	position: fixed;
+	padding: 1%;
+	width: 25vw;
+	height: 97vh;
+/*	color: red;*/
+/*	background-color: pink;*/
+}
+
+
+.single{
+	position: absolute;
+	width: 100vw;
+/*	height: 20vh;*/
+/*	background-color: red;*/
+/*	margin-bottom: 15px;*/
+}
+
+/*Image Slider*/
+	.mySlides {
+	  display: none;
+	  height: 462px;
+	  overflow: hidden;
+	}
+	/*img {vertical-align: middle;}*/
+
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 1000px;
+	  position: relative;
+	  margin: auto;
+	  overflow: hidden;
+	  display: flex;
+	  align-items: center;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	  position: absolute;
+	  top: 40%;
+	  bottom:50%;
+	  padding: 8px;
+	  width: auto;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  overflow: hidden;
+	  font-weight: bold;
+	  font-size: 1.4rem;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	  background-color: #d1d3d4;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover {
+	  cursor: w-resize;
+	}
+
+	.next:hover {
+	  cursor: e-resize;
+	}
+
+
+	/* Caption text */
+	.text {
+	  font-weight: 400;
+	  font-size: 0.8rem;
+	  padding: 1% 2%;
+	  position: absolute;
+	  width: 100%;
+	  text-align: center;
+	  background-color: #d1d3d4;
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  font-size: 0.8rem;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+
+/*Two Grid*/
+	.kiDuo{
+		display: inline-flex;
+		/*border:none;*/
+		width:100%;
+		margin-bottom:10px;
+	}
+
+	.kiDuoA{
+	/*	background-color:gold;*/
+		width:49.5%;
+	}
+
+	.kiDuoB{
+	/*	background-color:pink;*/
+		width:49.5%;
+	}
+
+
+/*Three Grid*/
+	.tri{
+		display: inline-flex;
+		/*border:none;*/
+		width:100%;
+		height: 100%;
+		margin-bottom:10px;
+	}
+
+	.tri-left{
+		width:49.5%;
+		overflow: hidden;
+	}
+
+	.triA{
+		/*background-color:gold;*/
+		width:100%;
+		height:50%;
+		overflow: hidden;
+	}
+
+	.triB{
+		/*background-color:pink;*/
+		bottom: 0;
+		width:100%;
+		height:50%;
+		overflow: hidden;
+		margin-top:10px;
+	}
+
+	.triC{
+	/*	background-color:blue;*/
+		width:99.5%;
+	}
